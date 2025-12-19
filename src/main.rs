@@ -1,8 +1,11 @@
 mod model;
 mod utils;
+mod enums;
 // 声明 utils 目录作为模块
 use model::user::User;
 use utils::hello; // 引用 hello.rs 里的函数
+use enums::ipAddrKind::IpAddrKind;
+
 fn main() {
     println!("你好");
     let a = 20;
@@ -17,8 +20,8 @@ fn main() {
     name = "hello";
     println!("{}", name);
 
+    let b = 12;
     let a = 10;
-    let mut b: i32 = 12;
 
     let a = hello::add(a, b);
 
@@ -61,22 +64,17 @@ fn main() {
     }
 
     let u = User {
-        userName: String::from("hello"),
-        userId: 20,
+        user_name: String::from("hello"),
+        user_id: 20,
         deleted: false,
         age: 30,
     };
 
     println!("{}", serde_json::to_string(&u).unwrap());
 
-    enum IpAddrKind {
-        V4,
-        V6,
-    }
-
     let four = IpAddrKind::V4;
     let six = IpAddrKind::V6;
+    println!("{:?}", four);
+    println!("{:?}", six);
 
-    println!("four");
-    println!("six")
 }

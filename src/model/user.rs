@@ -1,8 +1,8 @@
 use serde::Serialize;
 #[derive(Serialize)]
 pub struct User {
-   pub userName: String,
+   pub user_name: String,
    pub age: i32,
    pub deleted: bool,
-   pub userId: i32,
+   pub user_id: i32,
 }
