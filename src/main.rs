@@ -76,5 +76,7 @@ fn main() {
     let six = IpAddrKind::V6;
     println!("{:?}", four);
     println!("{:?}", six);
+    println!("{}", hello::ip(four));
+    println!("{}", hello::ip(six));
 
 }
