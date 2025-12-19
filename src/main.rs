@@ -69,4 +69,14 @@ fn main() {
 
     println!("{}", serde_json::to_string(&u).unwrap());
 
+    enum IpAddrKind {
+        V4,
+        V6,
+    }
+
+    let four = IpAddrKind::V4;
+    let six = IpAddrKind::V6;
+
+    println!("four");
+    println!("six")
 }
