@@ -1,1 +1,1 @@
-pub mod ipAddrKind;
+pub mod ip_addr_kind;

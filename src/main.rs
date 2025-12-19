@@ -4,7 +4,7 @@ mod enums;
 // 声明 utils 目录作为模块
 use model::user::User;
 use utils::hello; // 引用 hello.rs 里的函数
-use enums::ipAddrKind::IpAddrKind;
+use enums::ip_addr_kind::IpAddrKind;
 
 fn main() {
     println!("你好");
